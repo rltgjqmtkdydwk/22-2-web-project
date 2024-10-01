@@ -1,0 +1,40 @@
+html {
+    border: 0ch;
+    margin: 0;
+    background-color: black;
+    color: aliceblue;
+}
+body header {
+    text-align: center;
+}
+
+.title {
+    font-style: italic;
+    display: block;
+    letter-spacing: 5px;
+}
+.navi {
+    margin-left: 450px;
+    margin-right: 450px;
+    line-height: 1.7;
+    text-align: center;
+    word-spacing: 20px;
+    background-color: blue;
+}
+a {
+    text-decoration-line: none;
+    color: aliceblue;
+}
+a:hover {
+    font-style: italic;
+}
+
+#login-form {
+    text-align: center;
+    box-sizing: border-box;
+    border-color: red;
+}
+
+.item:hover {
+    font-style: italic;
+}

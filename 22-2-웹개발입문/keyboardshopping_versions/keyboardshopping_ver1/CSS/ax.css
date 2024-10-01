@@ -1,0 +1,16 @@
+html{
+    margin: 0;
+    background-color: black;
+    color: aliceblue;
+}
+.table{
+    position: relative;
+    background-color: white;
+    color: black;
+    width: 70%;
+}
+a {
+    text-decoration-line: none;
+    color: aliceblue;
+    font-weight: bold;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Array</title>
+</head>
+<body>
+<h3>Array 객체로 배열 만들기</h3>
+<hr>
+<script>
+    let degrees = new Array(); //빈 배열 생성
+    degrees[0] = 15.1;
+    degrees[1] = 15.4;
+    degrees[2] = 16.1;
+
+    let sum = 0;
+    for(let i=0; i<degrees.length; i++)
+        sum+=degrees[i];
+
+    document.write("평균 온도는" + sum/degrees.length + "<br>");
+</script>
+</body>
+</html>

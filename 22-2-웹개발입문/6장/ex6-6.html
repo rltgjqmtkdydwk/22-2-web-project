@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>데이터 타입과 변수; 지역변수, 전역변수, 블록변수</title>
+</head>
+<body>
+<script>
+    /*변수 선언과 범위*/
+    // 자바스크립트 변수는 type이 없음. 그냥 var/let/const 사용
+    var score;
+    var year, month, day;
+    var address ='서울시';
+    age = 21;
+    score = 66.7;
+    score = "high";
+
+    // 변수의 선언 범위
+    let x;                  //전역변수; 함수 밖에서 let/var로 선언됨
+    function f() {
+        let y;              //지역변수; 함수 내에서 let/var로 선언됨
+        x = 10;             //전역변수 x 에 10 저장
+        y = 20;             //지역변수 y 에 20 저장
+        z = 30;             //전역변수; var/let 없이 아무 곳에서나 선언됨
+        if ( y == 20) {
+            let w = 40;     //블록변수; let으로 if,while,for 등 블록 내에서 선언됨
+            b++;            //***블록 외 다른 곳에서는 블록변수 b에 접근 불가***
+        }                   //전역변수(x, z)와 지역변수(y) 접근 가능
+    }                       //전역변수(x, z)만 접근 가능
+
+
+    /*변수 this로 전역변수에 접근하기*/
+    let a=10;             //전.변
+    function f() {
+        let a;              //지.변
+        a=1;                //이건 지역변수에 저장한거
+        this.a = 100;       //얘는 전역변수에 저장한거(다만, 전역변수가 let(블록변수로도 씀)으로 선언된 경우 this 접근 불가)
+    }
+</script>
+</body>
+</html>

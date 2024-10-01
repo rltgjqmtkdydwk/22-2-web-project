@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>자바스크립트 다이얼로그: 사용자 입력 및 메세지 출력</title>
+</head>
+
+<body>
+<!--<h3>입력을 받는 3가지 다이얼로그</h3>
+    <p>prompt dialog(프롬프트 다이얼로그),
+    <br>confirm dialog(확인 다이얼로그),
+    <br>alert dialog(경고 다이얼로그)</p> -->
+<script>
+    // prompt dialog
+    let ret = prompt("name:","default");
+    if (ret = null) {
+        // alert("취소버튼이나 다이얼로그를 닫았습니다.")
+    }
+    else if (ret =="") {
+        // alert("문자열을 입력하지 않았습니다.")
+    }
+    else {
+    }
+
+    // confirm dialog
+    let rett = confirm("wanna send?");
+    if (ret == true) {
+        document.write('sending... z')
+    }
+    else {
+    }
+
+    // alert dialog
+    alert("click")
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var sum = 0;
+        function acc() {
+            var sum = 0;
+            for (let i=0; i<10; i++)
+                this.sum += i;
+        }
+        acc();
+        document.write("합 = "+ sum);
+    </script>
+</body>
+</html>

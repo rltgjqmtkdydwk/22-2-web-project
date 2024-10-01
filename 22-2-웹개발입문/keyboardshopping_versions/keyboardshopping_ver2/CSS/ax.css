@@ -1,0 +1,41 @@
+html{
+    margin: 0;
+    background-color: black;
+    color: aliceblue;
+}
+.table{
+    margin-left: 200px;
+    position: relative;
+    background-color: white;
+    color: black;
+    width: 70%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+#blue:hover {
+    background-color: #3CA0E1;
+    cursor: pointer;
+}
+#red:hover {
+    background-color: #B95050;
+    cursor: pointer;
+}
+#brown:hover{
+    background-color: #CC7C38;
+    cursor: pointer;
+}
+#green:hover{
+    background-color: #719E71;
+    cursor: pointer;
+}
+#black:hover{
+    background-color: #787878;
+    cursor: pointer;
+}
+
+a {
+    text-decoration-line: none;
+    color: aliceblue;
+    font-weight: bold;
+}

@@ -1,0 +1,19 @@
+body {
+    background-color: white;
+    font-size: small; color: aliceblue;
+}
+table{
+    border-collapse: collapse;
+    background: linear-gradient( #DEB887, #5F9EA0);
+}
+
+th {
+    width: 95px;
+    height: 30px;
+}
+thead{
+    background-color: darkslategray;
+}
+td{
+    vertical-align: top;
+}

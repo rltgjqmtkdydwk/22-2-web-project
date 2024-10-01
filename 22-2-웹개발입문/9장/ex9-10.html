@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mouse listener</title>
+    <script>
+        let width=1;
+        function down(obj) {
+            obj.style.fontStyle = "italic";
+        }
+        function up(obj) {
+            obj.style.fontStyle = "normal";
+        }
+        function over(obj) {
+            obj.style.boarderColor = "violet";
+        }
+        function out(obj) {
+            obj.style.boarderColor = "lightgray";
+        }
+        function wheel(e, obj) {
+            if (e.wheelData < 0) {
+                width--;
+                if (width<0)
+                width = 0;
+            }
+            else {
+                width++;
+            obj.style.boarderStyle = "ridge";
+            obj.style.borderwidth = width + "px";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div>about mouse
+        <span onmousedown="down(this)"
+            onmouseup="up(this)"
+            onmouseover="over(this)"
+            onmouseout="out(this)"
+            onwheel="wheel(event, this)"
+            style="display:inline-block;">EVENT</span>.
+    </div>
+</body> 
+</html>

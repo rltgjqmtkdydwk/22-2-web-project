@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        let win = null;
+        function showHTML() {
+            if(win == null || win.closed) {
+                window.open("", "outwin", "width=300", "height=200");
+                let t=document.getElementById("srcText");
+
+                win.document.open();
+                win.document.write(t.value);
+                win.document.close();
+            }
+        }
+    </script>
+</head>
+<body>
+    <h3>HTML 문서작성기 만들기</h3>
+    <hr>
+    <textarea id="srcText" rows="10" cols="50"></textarea>
+    <br>
+    <button onclick="showHTML()">HTML 문서출력 </button>
+</body>
+</html>

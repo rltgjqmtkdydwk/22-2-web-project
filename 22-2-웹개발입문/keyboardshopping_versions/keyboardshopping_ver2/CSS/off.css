@@ -1,0 +1,22 @@
+html{
+    margin: 0%;
+    background-color: black;
+    color: aliceblue;
+}
+.logo{
+    width: 100px;
+    height: auto;
+}
+img {
+    width: 500px;
+    height: auto;
+}
+a {
+    text-decoration-line: none;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.store {
+    columns: 2;
+}

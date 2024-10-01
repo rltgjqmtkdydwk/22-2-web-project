@@ -1,0 +1,19 @@
+html, header {
+    width: 50%;
+    height: 30%;
+    background-color: yellow;
+}
+    h1 {
+        text-align: center;
+    }
+
+section {
+    width: 50%;
+    height: 60%;
+    background-color: lightcoral;
+}
+footer {
+    width: 50%;
+    height: 20%;
+    background-color: plum;
+}

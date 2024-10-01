@@ -1,0 +1,22 @@
+html{
+    margin: 0;
+    padding: 0%;
+    background-color: black;
+    color: aliceblue;
+}
+img{
+    width: 300px;
+    height: 300px;
+    border-radius: 2em;
+    display: block;
+}
+section{
+    column-count: 2;
+    padding: 20px;
+    list-style: none;
+}
+a {
+    text-decoration-line: none;
+    color: aliceblue;
+    font-weight: bold;
+}

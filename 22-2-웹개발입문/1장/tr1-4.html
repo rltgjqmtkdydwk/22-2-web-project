@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>본문 그림 1-14 응용하기</title>
+    <style>
+        body {
+            background-color: linen;
+            color: green;
+            margin-left: 40px;
+        }
+        h3 {
+            text-align: center;
+            color: darkred;
+        }
+        hr {
+            height: 5px;
+            border: solid grey;
+            background-color: grey;
+        }
+        span {
+            color: blue;
+            font-size: 20px;
+        }
+    </style>
+    <script>
+        function show() {
+            document.getElementById("fig").src="https://m.media-amazon.com/images/M/MV5BNjg5ODNiZmYtZjQ5ZS00ZGU2LTk4MTEtNzdiNWVmYjdhYTAyXkEyXkFqcGdeQXVyMDI2NDg0NQ@@._V1_.jpg";
+        }
+        function hide() {
+            document.getElementById("fig").src="";
+        }
+    </script>
+</head>
+<body>
+<h3>Elvis Presley</h3>
+<hr>
+he was an American  singer and actor.
+he made film 
+<span onmouseover="show()" onmouseout="hide()">love me tneder</span>.
+he is refered to <span>the king of R&R</span>.
+<div> <img id="fig" src=""></div>
+</body>
+</html>

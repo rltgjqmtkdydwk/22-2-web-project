@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h3>page 방문</h3>
+    <br>
+    <script>
+        let current = new Date(); //현재 시간 date객체 생성
+        if(current.getSeconds()%2 == 0) {//짝수
+            document.body.style.backgroundColor = "violet";
+        }
+        else {//홀수
+            document.body.style.backgroundColor = "aliceblue";
+        }
+
+        document.write(current.getSeconds(), "초")
+    </script>
+</body>
+</html>

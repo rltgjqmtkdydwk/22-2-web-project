@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function query() {
+            let ret  = confirm("naver로 이동하시겠습니까?")
+            return ret;
+        }
+
+        function noAction(e) {
+            e.preventDefault();
+        }
+        
+    </script>
+</head>
+<body>
+    <a href="https://www.naver.com/"
+    onclick="return query()">네이버 이동할지 물어보는 링크</a>
+    <hr>
+    <form>
+        <input type="checkbox">빵<br>
+        <input type="checkbox"
+        onclick="noAction(event)">술<br>
+    </form>
+</body>
+</html>
